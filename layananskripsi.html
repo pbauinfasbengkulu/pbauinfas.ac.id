@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layananskripsipba.uinfasbengkulu</title>
+
+    <!-- start link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- end link bootstrap -->
+
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="blog.rtl.css" />
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+</head>
+
+<div class="container">
+    <header class="border-bottom">
+        <div>
+            <img src="assets/pbauinfas.png" class="img-fluid" alt="...">
+        </div>
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+
+            </div>
+        </div>
+    </header>
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><strong>PBA UIN FAS</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visimisi.html">Visi Misi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="akademik.html">Akademik</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="akademik.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pedoman</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="rip.html">RIP Fakultas</a></li>
+                            <li><a class="dropdown-item" href="#">Renstra</a></li>
+                            <li><a class="dropdown-item" href="pedomanakademik.html">Akademik</a></li>
+                            <li><a class="dropdown-item" href="#">Kode Etik</a></li>
+                            <li><a class="dropdown-item" href="#">Penyusunan RPS</a></li>
+                            <li><a class="dropdown-item" href="#">Micro Teaching</a></li>
+                            <li><a class="dropdown-item" href="#">Penulisan Skripsi</a></li>
+                            <li><a class="dropdown-item" href="#">Pelayanan Beasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Pelayanan Bimbingan Ademik</a></li>
+                            <li><a class="dropdown-item" href="#">Pengembangan Minat</a></li>
+                            <li><a class="dropdown-item" href="#">PLP I</a></li>
+                            <li><a class="dropdown-item" href="#">PLP II</a></li>
+                            <li><a class="dropdown-item" href="#">Serdos</a></li>
+                            <li><a class="dropdown-item" href="#">Keuangan</a></li>
+                            <li><a class="dropdown-item" href="#">Perencanaan</a></li>
+                            <li><a class="dropdown-item" href="#">Roadmap Penelitian</a></li>
+                            <li><a class="dropdown-item" href="#">Roadmap Pengabdian</a></li>
+                            <li><a class="dropdown-item" href="#">Survey Kelulusan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="dosen.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dosen</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">DTPS PBA</a></li>
+                            <li><a class="dropdown-item" href="#">Prestasi dosen</a></li>
+                            <li><a class="dropdown-item" href="#">Karya dosen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="akademik.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mahasiswa</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Data Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Prestasi Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Karya Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pendanaan
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Operasional Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Penelitian</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Pengabdian</a></li>
+                            <li><a class="dropdown-item" href="#">Publikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Kemahasiswaan</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi SDM</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi Prasarana Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi Sarana Pendidikan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+</div>
+<!-- end navbar -->
+
+<main class="container">
+    <divp-4>
+        <div class="col-lg-12 px-0">
+            <div>
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <article class="blog-post">
+                            <h2>PROSEDUR PENYELESAIAN STUDI MAHASISWA</h2>
+                            <p class="text-justify">Sebagai syarat untuk lulus menjadi Sarjana (S1) Pendidikan,
+                                mahasiswa
+                                Fakultas Tarbiyah dan Tadris Universitas Islam Negeri Fatmawati Sukarno
+                                Bengkulu diwajibkan membuat sebuah Tugas Akhir atau karya ilmiah dalam
+                                bentuk Skripsi. Skripsi merupakan karya tulis mahasiswa mengenai hasil penelitian
+                                yang dilaksanakan sesuai dengan proposal skripsi yang telah dinilai dan disetujui.
+                                Proposal skripsi merupakan suatu tulisan yang harus dipersiapkan sebagai syarat
+                                untuk dapat melakukan kegiatan dan penyusunan laporan skripsi. Proposal skripsi
+                                merupakan Cetak Biru Perencanaan (blueprint) skripsi yang menjadi kerangka
+                                acuan bagi mahasiswa dalam merencanakan, melaksanakan dan menyelesaikan
+                                penulisan skripsi.</p>
+                            <h4>Ujian Tugas Akhir (Munaqasah Skripsi)</h4>
+                            <p class="text-justify">a. Munaqasyah merupakan ujian untuk mempertanggungjawabkan karya
+                                ilmiah dalam bentuk skripsi atau tugas akhir lainnya untuk meraih gelar
+                                sarjana;</p>
+                            <p class="text-justify">b. Munaqasyah diselenggarakan dalam bentuk majelis/sidang yang
+                                terdiri
+                                orang 4 orang penguji. (Ketua, Sekretaris, Penguji 1 (Utama), Penguji 2
+                                (Anggota);</p>
+                            <p class="text-justify">c. Ketua sidang adalah dosen dengan jabatan Lektor Kepala atau
+                                lektor
+                                dengan gelar Doktor;</p>
+                            <p class="text-justify">d. Sidang munaqasyah diselenggarakan oleh jurusan/program studi
+                                dibawah tanggung jawab Wakil Dekan I;</p>
+                            <p class="text-justify">e. Ketua jurusan/prodi mengusulkan tim penguji yang kompeten dalam
+                                bidang metodologi dan substansi skripsi. Sedangkan ketua dan sekretaris
+                                sidang munaqasyah diutamakan ditunjuk dari Pembimbing I dan
+                                Pembimbing II;</p>
+                            <p class="text-justify">f. Sebelum pelaksanaan munaqasyah jurusan/program studi
+                                berkoordinasi
+                                dengan pengelola akademik untuk mengecek kelengkapan dan
+                                persyaratan-persyaratan yang harus dipenuhi oleh peserta munaqasyah;</p>
+                            <p class="text-justify">g. Mahasiswa yang berhak mengikuti ujian skripsi (munaqasyah) adalah
+                                yang memenuhi ketentuan sebagai berikut:</p>
+                            <p class="text-justify">1. Telah lulus semua mata kuliah;</p>
+                            <p class="text-justify">2. Mata kuliah skripsi telah didaftarkan pada siakad (KRS);</p>
+                            <p class="text-justify">3. Telah lulus ujian komprehensif;</p>
+                            <p class="text-justify">4. IPK minimal 2,00;</p>
+                            <p class="text-justify">5. Telah menyelesaikan penulisan skripsi beserta dokumen
+                                kelengkapannya’</p>
+                            <p class="text-justify">6. Telah memiliki sertifikat TOEFL dan TOAFL dengan ketentuan:</p>
+                            <p class="text-justify">- Skor TOEFL 400 bagi semua program studi, kecuali Program
+                                Studi Bahasa Inggris, skor yang harus dipenuhi sebesar 450.</p>
+                            <p class="text-justify">- Skor TOAFL 400 bagi semua program studi, kecuali Program Studi
+                                Pendidikan Bahasa Arab (PBA) skor yang harus dipenuhi
+                                sebesar 450.</p>
+                            <p class="text-justify">- Telah terpenuhi persyaratan SKEK (Surat Keterangan Ekstra
+                                Kurikuler) minimal 100 SKEK, yang ditandatangani Ketua Tim
+                                SKEK dan diketahui oleh Wakil Dekan III.</p>
+                            <p class="text-justify">7. Telah lunas pembayaran uang kuliah tunggal sampai dengan
+                                semester berjalan;</p>
+                            <p class="text-justify">8. Lulus baca-tulis Alquran (melampirkan sertifikat dari PUSQIK).
+                            </p>
+                            <h4>Pengajuan Pendaftaran Ujian Skripsi</h4>
+                            <p class="text-justify">Mekanisme pengajuan pendaftaran ujian skripsi dilaksanakan melalui
+                                prosedur sebagai berikut:</p>
+                            <p class="text-justify">a. Mahasiswa telah menyelesaikan semua mata kuliah yang
+                                dipersyaratkan
+                                untuklulus Sarjana (S1) Pendidikan dari Prodi. (Transkrip Nilai yang telah
+                                di validasi oleh pengelola Nilai akademik)</p>
+                            <p class="text-justify">b. Mahasiswa telah menyelesaikan kegiatan penelitian dengan bukti
+                                keterangan penelitian dari tempat meneliti yang dilaksanakan Minimal 1
+                                Bulan dan proses pembimbingan skripsi dengan dosen pembimbing
+                                minimal 8 (Delapan) kali yang dibuktikan dengan tanda tangan dosen
+                                pembimbing pada Kartu Pembimbingan Skripsi.</p>
+                            <p class="text-justify">c. Naskah skripsi mahasiswa yang telah disetujui untuk diujikan
+                                disahkan
+                                oleh 2 (dua) orang dosen pembimbing.</p>
+                            <p class="text-justify">d. Penyerahan naskah skripsi kepada tim penguji selambat-lambatnya 3
+                                (tiga)
+                                hari sebelum pelaksanaan ujian skripsi. Jika naskah belum diserahkan
+                                dalam waktu yang ditentukan maka pelaksanaan ujian skripsi akan
+                                dijadwalkan ulang.</p>
+                            <p class="text-justify">Mahasiswa mendaftarkan diri untuk mengikuti ujian skripsi kepada
+                                pengelola Prodi dengan menyerahkan persyaratan sebagai berikut:</p>
+                            <p class="text-justify">1) Pra-transkrip akademik yang telah ditandatangani oleh pengelola
+                                akademik sebagai bukti telah lulus semua mata kuliah;</p>
+                            <p class="text-justify">2) Bukti pelunasan SPP pada semester berjalan;</p>
+                            <p class="text-justify">3) Salinan KRS semester berjalan yang mencantumkan mata kuliah
+                                skripsi;</p>
+                            <p class="text-justify">4) Kartu kendali seminar proposal yang sudah ditangani oleh
+                                Koordinator ProgramStudi;</p>
+                            <p class="text-justify">5) Kartu pembimbingan skripsi yang telah ditanda tangani oleh dosen
+                                pembimbing;</p>
+                            <p class="text-justify">6) Naskah skripsi yang telah disetujui dosen pembimbing sebanyak 5
+                                (lima)eksemplar;</p>
+                            <p class="text-justify">7) Salinan sertifikat TOEFL dan memperlihatkan sertifikat aslinya;
+                            </p>
+                            <p class="text-justify">8) Nilai ujian komprehensif asli;</p>
+                            <p class="text-justify">9) SKEK yang telah ditandatangan oleh pejabat yang berwenang;</p>
+                            <p class="text-justify">10) Surat pernyataan bahwa skripsi yang dibuat tidak menjiplak karya
+                                orang lain atau dibuat orang lain asli diatas materai 10.000;</p>
+                            <p class="text-justify">11) Photo copy KTM;</p>
+                            <p class="text-justify">12) Photo copy KTP/KK;</p>
+                            <p class="text-justify">13) Photo copy ijazah SD, SMP, SLTA.</p>
+                            <p class="text-justify">f. Mahasiswa mengisi formulir pendaftaran ujian skripsi;</p>
+                            <p class="text-justify">g. Pengelola akademik Prodi menyampaikan nama mahasiswa yang
+                                memenuhi syarat untuk munaqasyah (sebagaimana disebutkan pada butir
+                                6) dan penetapan dosen penguji (sebagaimana disebutkan pada butir 8)
+                                kepada Jurusan;</p>
+                            <p class="text-justify">h. Jurusan menyusun jadwal dan tempat pelaksanaan ujian skripsi;</p>
+                            <p class="text-justify">i. Jurusan mengumumkan jadwal dan tempat pelaksanaan ujian;</p>
+                            <p class="text-justify">j. Setelah selesai pelaksanaan munaqasyah skripsi sekretaris penguji
+                                menyampaikan berkas hasil munaqasyah kepada pengelola akademik
+                                prodi.</p>
+                            <h4>Persyaratan Ujian Skripsi</h4>
+                            <p class="text-justify">1. Mahasiswa dapat megikuti ujian Skripsi apabila mahasiswa telah
+                                memiliki
+                                karya ilmiah yang telah dipublis di jurnal ilmiah terakreditasi (dibuktikan jurnal yang
+                                sudah publis pada jurnal yang bersangkutan bukan LOA);</p>
+                            <p class="text-justify">2. Mahasiswa telah melaksanakan bimbingan Skripsi/ Hasil Penelitian
+                                dengan pembimbing 1 minimal lima (5) kali dan pembimbing 2 lima (5)
+                                kali di buktikan dengan kartu bimbingan yang telah di tanda tangani oleh
+                                pembimbing dan ditanda tangan oleh ketua jurusan;</p>
+                            <p class="text-justify">3. Penulisan karya ilmiah harus mengacu pada format sitasi
+                                computerized;</p>
+                            <p class="text-justify">4. Mahasiswa sudah menghadiri ujian munaqosyah sebagai peserta
+                                minimal
+                                tiga (3) kali lintas prodi (berdasarkan jumlah pertemuan bukan jumlah
+                                mahasiswa yang diujikan dan dibuktikan dengan daftar hadir yang telah
+                                ditanda tangani oleh koordinator Program Studi;</p>
+                            <h4>Pelaksanaan Ujian Skripsi</h4>
+                            <p class="text-justify">Mekanisme pelaksanaan ujian skripsi mahasiswa dilaksanakan melalui
+                                prosedur sebagai berikut:</p>
+                            <p class="text-justify">1. Ujian skripsi dilaksanakan sesuai dengan jadual yang ditetapkan
+                                oleh
+                                fakultas sesuai dengan kalender akademik;</p>
+                            <p class="text-justify">2. Pelaksanaan ujian skripsi dihadiri oleh mahasiswa yang akan diuji
+                                dan 4
+                                (empat) orang dosen penguji dengan rincian: 1 (satu) orang dosen sebagai
+                                ketua tim penguji (Pembimbing1), Sekretaris serta dan 2 (dua) orang dosen
+                                sebagai penguji utama dan penguji anggota;</p>
+                            <p class="text-justify">3. Apabila dosen pembimbing pertama dan dosen penguji berhalangan
+                                hadir,
+                                maka yang bersangkutan wajib untuk memberikan pemberitahuan secara
+                                tertulis atau lisan kepada Prodi 1 (satu) hari sebelum pelaksanaan ujian;</p>
+                            <p class="text-justify">4. Pelaksanaan ujian dapat ditunda apabila terjadi salah satu dari
+                                hal-hal
+                                berikut:</p>
+                            <p class="text-justify">a) Mahasiswa yang bersangkutan tidak hadir.
+                                b) 2 (dua) orang dosen penguji tidak hadir.
+                                c) Mahasiswa mengisi format penundaan ujian dan menyerahkannya
+                                kepadaProdi untuk dijadwalkan kembali.</p>
+                            <p class="text-justify">5. Ujian skripsi dilaksanakan dalam waktu maksimal 1,5 jam (90
+                                menit), terdiri dari 15 menit presentasi skripsi dan 75 menit tanya jawab
+                                permahasiswa;</p>
+                            <p class="text-justify">6. Masing-masing penguji diberikan kesempatan untuk bertanya,
+                                mengklarifikasi, memberikan saran dan perbaikan, serta memberikan
+                                penilaian pada format penilaian ujian skripsi;</p>
+                            <p class="text-justify">7. Anggota tim penguji menyerahkan hasil penilaiannya kepada ketua
+                                penguji,
+                                dan sekretaris ujian merekapitulasi nilai hasil ujian;</p>
+                            <p class="text-justify">8. Seluruh tim penguji berdiskusi untuk menentukan keputusan
+                                kelulusan,
+                                akumulasi nilai dan waktu perbaikan. Apabila terdapat ketidaksepakatan
+                                dalam menilai, maka tim penguji wajib menyelesaikannya secara
+                                musyawarah;</p>
+                            <p class="text-justify">9. Hasil keputusan tim penguji tidak dapat diganggu gugat atau
+                                intervensi dari
+                                pembimbing atau pihak lain;</p>
+                            <p class="text-justify">10. Ketua penguji, anggota penguji, dan mahasiswa mengisi dan
+                                menandatangani berita acara ujian;</p>
+                            <p class="text-justify">11. Ketua tim penguji mengumumkan hasil keputusan ujian dan
+                                menyerahkan
+                                draft skripsi yang harus diperbaiki oleh mahasiswa;</p>
+                            <p class="text-justify">12. Selesai pelaksanaan ujian, sekretaris tim penguji menyerahkan
+                                berkasa hasil ujian
+                                kepada pengelola akademik prodi;</p>
+                            <p class="text-justify">13. Mahasiswa yang tidak lulus ujian skripsi:</p>
+                            <p class="text-justify">a) wajib merevisi skripsinya dan diberikan kesempatan menempuh ujian
+                                ulangan sebanyak-banyaknya 2 (dua) kali;
+                                b) Pada ujian skripsi ulangan dalam judul skripsi yang sama apabila ada
+                                diantara anggota tim penguji terdahulu berhalangan dapat digantikan
+                                oleh dosen lain atas usul Sekretaris jurusan dan ditetapkan oleh Dekan;
+                                c) Mahasiswa yang tidak lulus ujian skripsi ulangan untuk kedua kalinya,
+                                diwajibkan menyusun skripsi dengan judul lain. Untuk ini mahasiswa
+                                diperkenankan mengajukan pergantian dosen pembimbingnya; d) Naskah skripsi yang telah
+                                diujikan dan memenuhi syarat harus
+                                disahkan oleh semua anggota tim penguji dan dekan, termasuk bila terjadi revisi.</p>
+                            <h4>Penilaian</h4>
+                            <p class="text-justify">Nilai akhir skripsi diperoleh dari hasil penilaian naskah skripsi
+                                dan unjuk
+                                kerja (performance) mahasiswa saat ujian. Komponen penilaian skripsi
+                                meliputi:</p>
+                            <p class="text-justify">1. Penguasaan materi dan pengunaan bahasa pada saat ujian;</p>
+                            <p class="text-justify">2. Ketepatan jawaban;</p>
+                            <p class="text-justify">3. Struktur, bahasa dan logika penulisan;</p>
+                            <p class="text-justify">4. Kedalaman dan keluasan teori keilmuan yang relevan;</p>
+                            <p class="text-justify">5. Relevansi teori dengan masalah;</p>
+                            <p class="text-justify">6. Kemampuan mempertahankan argumen;</p>
+                            <p class="text-justify">7. Teknik pengumpulan dan keabsahan instrumen analisis data;</p>
+                            <p class="text-justify">8. Orisinalitas;</p>
+                            <p class="text-justify">9. Pembahasan hasil penelitian, penarikan kesimpulan dan pengajuan
+                                saran;
+                                Komponen penilaian skripsi meliputi: inovasi, produktivitas dan kegunaan
+                                penulisan laporan. Nilai akhir skripsi didasarkan pada kriteria berikut:</p>
+                            <p class="text-justify">- Penentuan skor menggunakan skala 100.</p>
+                            <p class="text-justify">- Pemberian nilai hasil ujian skripsi didasarkan atas kriteria
+                                berikut :</p>
+                            <img src="assets/layananskripsi1.PNG">
+                            <p class="text-justify">- Mahasiswa dinyatakan lulus ujian skripsi apabila:</p>
+                            <p class="text-justify">a) Skripsi yang diujikan merupakan hasil karya otentik yang dibuat
+                                dan diselesaikan sendiri. Apabila ditemukan bukti bahwa skripsi yang
+                                ditulis merupakan duplikasi, jiplakan, atau terjemahan hasil karya
+                                orang lain, maka dianggap sebagai pelanggaran akademik dan
+                                mahasiswa harus mengajukan judul baru;</p>
+                            <p class="text-justify">b) Memperoleh nilai minimum B.</p>
+                            <p class="text-justify">c) Telah memperbaiki skripsi sesuai saran dan arahan dari para
+                                penguji
+                                yang dibuktikan dengan penandatanganan pada halaman pengesahan
+                                skripsi.</p>
+                            <p class="text-justify">Setelah mahasiswa dinyatakan lulus, mahasiswa diberikan waktu
+                                maksimal
+                                tiga minggu untuk memperbaiki skripsinya.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class="p-3">
+                                <h3 class="fst-italic">Akreditasi Prodi</h3>
+                                <img src="assets/akreditasi.png" class="img-fluid" alt="...">
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1iWiITxgREl7Cjx_fSivRSyYW-SaWtTL-/view">Download
+                                            sertifikat</a>
+                                    </li>
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1UBR5HhjuKzA-W4jE_1Omdpd3gs-sOqtu/view">Download
+                                            SK Ban-PT</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="fst-italic">Asosiasi Prodi</h3>
+                                <img src="assets/pppba.png" class="img-fluid" alt="...">
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1MRsZr8tEKfTQ53iZG1DWJwESWVwZW5z3/view?usp=drive_link">Download
+                                            sertifikat</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="fst-none">Hubungi Kami</h6>
+                                <img src="assets/youtube.png" class="img-fluid" alt="..." />
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://www.youtube.com/@arabbeta2218">Youtube</a>
+                                    </li>
+                                    <img src="assets/intsgram.png" class="img-fluid" alt="..." />
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://www.instagram.com/hmpspba_uinfasbengkulu?igsh=NzY4dm9mYWc0bGR4">Instagram</a>
+                                    </li>
+                                    <img src="assets/gmail.png" class="img-fluid" alt="..." />
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="mailto:pba@mail.uinfasbengkulu.ac.id?subject=Assalamu'alaikum,">Email
+                                            PBA</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+</main>
+<footer class="py-5 text-light bg-danger" min-width: 768px>
+    <div>
+        <p class=" text-center">© Program Studi Pendidikan Bahasa Arab 2024</p>
+        <p class=" text-center"><a href="https://ftt.uinfasbengkulu.ac.id/"><img src="assets/websiteftt.PNG" alt="..."
+                    height="40" width="80"></a><a href="https://uinfasbengkulu.ac.id/"><img src="assets/websiteuin.PNG"
+                    alt="..." height="40" width="80"></a></a><a href="https://lpm.uinfasbengkulu.ac.id/"><img
+                    src="assets/websitelpm.PNG" alt="..." height="40" width="80"></a></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>

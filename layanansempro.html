@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>layanansempropba.uinfasbengkulu</title>
+
+    <!-- start link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- end link bootstrap -->
+
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="blog.rtl.css" />
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+
+</head>
+
+<div class="container">
+    <header class="border-bottom">
+        <div>
+            <img src="assets/pbauinfas.png" class="img-fluid" alt="...">
+        </div>
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+
+            </div>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+
+            </div>
+        </div>
+    </header>
+
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><strong>PBA UIN FAS</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="profil.html">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visimisi.html">Visi Misi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="akademik.html">Akademik</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="akademik.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pedoman</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="rip.html">RIP Fakultas</a></li>
+                            <li><a class="dropdown-item" href="#">Renstra</a></li>
+                            <li><a class="dropdown-item" href="pedomanakademik.html">Akademik</a></li>
+                            <li><a class="dropdown-item" href="#">Kode Etik</a></li>
+                            <li><a class="dropdown-item" href="#">Penyusunan RPS</a></li>
+                            <li><a class="dropdown-item" href="#">Micro Teaching</a></li>
+                            <li><a class="dropdown-item" href="#">Penulisan Skripsi</a></li>
+                            <li><a class="dropdown-item" href="#">Pelayanan Beasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Pelayanan Bimbingan Ademik</a></li>
+                            <li><a class="dropdown-item" href="#">Pengembangan Minat</a></li>
+                            <li><a class="dropdown-item" href="#">PLP I</a></li>
+                            <li><a class="dropdown-item" href="#">PLP II</a></li>
+                            <li><a class="dropdown-item" href="#">Serdos</a></li>
+                            <li><a class="dropdown-item" href="#">Keuangan</a></li>
+                            <li><a class="dropdown-item" href="#">Perencanaan</a></li>
+                            <li><a class="dropdown-item" href="#">Roadmap Penelitian</a></li>
+                            <li><a class="dropdown-item" href="#">Roadmap Pengabdian</a></li>
+                            <li><a class="dropdown-item" href="#">Survey Kelulusan</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="dosen.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dosen</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">DTPS PBA</a></li>
+                            <li><a class="dropdown-item" href="#">Prestasi dosen</a></li>
+                            <li><a class="dropdown-item" href="#">Karya dosen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="akademik.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mahasiswa</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Data Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Prestasi Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Karya Mahasiswa</a></li>
+                            <li><a class="dropdown-item" href="#">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pendanaan
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Operasional Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Penelitian</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Pengabdian</a></li>
+                            <li><a class="dropdown-item" href="#">Publikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan Kemahasiswaan</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi SDM</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi Prasarana Pendidikan</a></li>
+                            <li><a class="dropdown-item" href="#">Investasi Sarana Pendidikan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+</div>
+<!-- end navbar -->
+
+<main class="container">
+    <divp-4>
+        <div class="col-lg-12 px-0">
+            <div>
+                <div class="row g-5">
+                    <div class="col-md-8">
+                        <article class="blog-post">
+                            <h2>PROSEDUR PENYELESAIAN STUDI MAHASISWA</h2>
+                            <p class="text-justify">Sebagai syarat untuk lulus menjadi Sarjana (S1) Pendidikan,
+                                mahasiswa
+                                Fakultas Tarbiyah dan Tadris Universitas Islam Negeri Fatmawati Sukarno
+                                Bengkulu diwajibkan membuat sebuah Tugas Akhir atau karya ilmiah dalam
+                                bentuk Skripsi. Skripsi merupakan karya tulis mahasiswa mengenai hasil penelitian
+                                yang dilaksanakan sesuai dengan proposal skripsi yang telah dinilai dan disetujui.
+                                Proposal skripsi merupakan suatu tulisan yang harus dipersiapkan sebagai syarat
+                                untuk dapat melakukan kegiatan dan penyusunan laporan skripsi. Proposal skripsi
+                                merupakan Cetak Biru Perencanaan (blueprint) skripsi yang menjadi kerangka
+                                acuan bagi mahasiswa dalam merencanakan, melaksanakan dan menyelesaikan
+                                penulisan skripsi.</p>
+                            <h4>Persyaratan Pengajuan Proposal Skripsi</h4>
+                            <P class="text-justify">Syarat-syarat akademik dan administratif bagi mahasiswa yang akan
+                                mengajukan proposal skripsi adalah sebagai berikut:</P>
+                            <p class="text-justify">1. Mahasiswa yang mengajukan proposal skripsi telah lulus minimal
+                                100
+                                SKS;</p>
+                            <p class="text-justify">2. Indeks Prestasi kumulatif (IPK) minimal 2.00.;</p>
+                            <p class="text-justify">3. Mahasiswa telah lulus mata kuliah Statistika dan Metodologi
+                                Penelitian atau
+                                mata kuliah yang bersesuaian dengan kedua mata kuliah tersebut di
+                                buktikan dengan KRS dan KHS;</p>
+                            <p class="text-justify">4. Mahasiswa tidak dalam status cuti akademik;</p>
+                            <p class="text-justify">5. Mahasiswa telah membayar UKT/SPP sampai dengan semester yang
+                                berjalan. (melampirkan Bukti pembayaran);</p>
+                            <p class="text-justify">6. Mahasiswa telah memprogramkan mata kuliah penulisan skripsi dalam
+                                Kartu Rencana Studi (KRS) dengan mengentri mata kuliah skripsi di siakad
+                                pada semester yang berjalan (melampirkan KRS yg telah disetujui);</p>
+                            <p class="text-justify">7. Usulan proposal yang diajukan mahasiswa harus berkaitan dengan
+                                bidang/disiplin ilmu pendidikan keprodian.</p>
+                            <h4>Teknis Pengajuan Judul Proposal / Skripsi</h4>
+                            <p class="text-justify">Mekanisme pengajuan judul/tema proposal/skripsi dilaksanakan melalui
+                                prosedur sebagai berikut:</p>
+                            <p class="text-justify">1. Mahasiswa mengajukan usulan judul proposal/skripsi yang telah
+                                disetujui
+                                oleh Pembimbing Akademik (PA) kepada Koordinator Program Studi
+                                sebanyak 3 Judul penelitian beserta proposal penelitiannya;</p>
+                            <p class="text-justify">2. Usulan judul proposal skripsi (proposal) tersebut diajukan oleh
+                                mahasiswa
+                                ke Koordinaor prodi selanjutnya diserahkan kepada Tim Seleksi Judul
+                                Proposal Skripsi (TSJPS) Prodi untuk menentukan 1 (satu) judul yang layak
+                                untuk dilaksanakan oleh mahasiswa;</p>
+                            <p class="text-justify">3. Jika usulan 3 judul/tema proposal/skripsi tidak diterima, maka
+                                mahasiswa
+                                yang bersangkutan mengusulkan kembali judul/tema proposal/skripsi
+                                kepada Koordinator Prodi;</p>
+                            <p class="text-justify">4. Tim Seleksi Judul Proposal Skripsi (TSJPS) Prodi melakukan
+                                seleksi
+                                terhadap usulan judul/tema proposal mahasiswa sesuai dengan kemampuan,
+                                keilmuan, dan dapat dilaksanakan oleh mahasiswa;</p>
+                            <p class="text-justify">5. Hasil seleksi judul dari Tim Seleksi Judul Proposal Skripsi
+                                (TSJPS)
+                                diserahkan ke Koordinator dan sekretaris jurusan membuat rekomendasi
+                                usulan 2 (dua) orang dosen penyeminar proposal/skripsi mahasiswa dengan
+                                diketahui oleh ketua jurusan (diparaf);</p>
+                            <p class="text-justify">6. Ketua jurusan membuat daftar rekapan dosen yang akan menjadi
+                                penyeminar proposal skripsi;</p>
+                            <p class="text-justify">7. Dosen penyeminar yang diusulkan harus mempertimbangkan bidang
+                                keilmuan, kepangkatan fungsional dosen serta proposional dan pemerataan.
+                                Selanjutnya diusulkan Ketua jurusan kepada fakultas guna mendapatkan
+                                jadual penetapan dosen penyeminar proposal skripsi melalui Wakil Dekan 1
+                                (diparaf) dan diajukan ke Dekan.</p>
+                            <h4>Pengajuan Pendaftaran Seminar Proposal</h4>
+                            <p class="text-justify">Mekanisme pengajuan pendaftaran seminar proposal dilaksanakan
+                                melalui prosedur sebagai berikut:</p>
+                            <p class="text-justify">1. Mahasiswa sudah menghadiri ujian seminar proposal sebagai peserta
+                                minimal lima (5) kali lintas prodi (berdasarkan jumlah pertemuan seminar
+                                bukan jumlah mahasiswa yang diseminarkan) dan dibuktikan dengan daftar
+                                hadir seminar yang telah ditandatangani oleh Koordinator Program Studi;</p>
+                            <p class="text-justify">2. Sekretaris jurusan berkonsultasi dengan ketua jurusan menyusun
+                                dan
+                                menetapkan jadwal seminar proposal mahasiswa.</p>
+                            <h4>Pelaksanaan Seminar Proposal</h4>
+                            <p class="text-justify">Mekanisme pelaksanaan seminar proposal dilaksanakan melalui prosedur
+                                sebagai berikut:</p>
+                            <p class="text-justify">1. Seminar proposal dilaksanakan sesuai dengan jadual, masa semester
+                                dan
+                                kalender akademik;</p>
+                            <p class="text-justify">2. Pelaksanaan seminar proposal diuji oleh 2 orang penguji;</p>
+                            <p class="text-justify">3. Pelaksanaan seminar proposal skripsi dapat ditunda apabila
+                                terjadi salah
+                                satu dari hal-hal berikut:
+                                a) Mahasiswa penyaji proposalskripsi datang terlambat atau tidak hadir;
+                                b) Kedua orang dosen penguji tidak hadir.</p>
+                            <p class="text-justify">4. Seminar proposal dilaksanakan dalam waktu maksimal 60 menit
+                                setiap
+                                mahasiswa;</p>
+                            <p class="text-justify">5. Setelah melalui proses seminar proposal:
+                                i. Mahasiswa wajib melakukan perbaikan proposal sesuai dengan saran
+                                penyeminar;
+                                ii. Jika proposal dianggap belum layak, maka belum dapat diteruskan ke
+                                penunjukan pembimbing proposal skripsi.</p>
+                            <p class="text-justify">6. Ketua penguji seminar proposal mengisi berita acara seminar
+                                proposal dan
+                                menyerahkannya kepada Koordinator Prodi;</p>
+                            <p class="text-justify">7. Sekretaris Jurusan setelah berkonsultasi dengan Ketua Jurusan
+                                membuat
+                                surat permohonan kepada Dekan untuk Penunjukan pembimbing skripsi.</p>
+                            <h4>Pembimbingan Skripsi</h4>
+                            <p class="text-justify">Mekanisme pembimbingan skripsi diatur dengan ketentuan sebagai
+                                berikut:</p>
+                            <p class="text-justify">1. Tanggung jawab dosen pembimbing pertama dan kedua pada dasarnya
+                                sama besar namun ada penekanan pada beberapa hal dalam proses
+                                pembimbingan.
+                                a. Pembimbing pertama bertanggung jawab/fokus pada rasional
+                                penelitian, substansi dan metode penelitian dari skripsi;
+                                b. Pembimbing kedua bertanggung jawab/fokus pada teori yang
+                                mendasari penelitian, sistematika dan tata tulis skripsi. Dimungkinkan
+                                bagi pembimbing kedua melakukan pembimbingan terhadap substansi
+                                skripsi apabila dirasa perlu atas persetujuan dari pembimbing pertama.</p>
+                            <p class="text-justify">2. Mahasiswa wajib menghadap dosen pembimbing paling lambat seminggu
+                                setelahpenetapan dosen pembimbing dengan membawa proposal dan surat
+                                penunjukan dosen pembimbing dari Dekan;</p>
+                            <p class="text-justify">3. wajib meminta pertimbangan dan persetujuan kepada kedua dosen
+                                pembimbing dalam setiap langkah dan tahap penyusunan skripsi;</p>
+                            <p class="text-justify">4. Dalam setiap pelaksanaan proses pembimbingan skripsi, mahasiswa
+                                diwajibkan untuk melakukan perekaman proses pembimbingan dalam kartu
+                                pembimbingan skripsi yang ditandatangani oleh dosen pembimbing pada
+                                setiap kali proses pembimbingan. Saran dan masukan harus ditulis langsung
+                                oleh dosen pembimbing pada kartu bimbingan;</p>
+                            <p class="text-justify">5. Apabila terjadi ketidak sesuaian antara mahasiswa dengan dosen
+                                pembimbing atau antara sesama pembimbing, sehingga dikhawatirkan dapat
+                                menghambat penyelesaian skripsi mahasiswa, maka mahasiswa yang
+                                bersangkutan dapat mengajukan permohonan tertulis kepada dekan melalui
+                                Sekretaris jurusan untuk mengusulkan pengantian pembimbing dengan
+                                melampirkan bukti yang akurat;</p>
+                            <p class="text-justify">6. Proses bimbingan dilakasanakan dengan dosen pembimbing 1
+                                selanjutnya
+                                di lanjutkan bimbingan dengan pembimbing 2 dan pengesahan bimbingan
+                                disahkan oleh pembimbing 1 baru di lanjutkan oleh pengesahan
+                                pembimbing 2;</p>
+                            <p class="text-justify">7. Proses pembimbingan skripsi mahasiswa yang terekam dalam kartu
+                                pembimbingan skripsi harus terisi sekurang-kurangnya 5 (lima) kali proses
+                                pembimbingan dengan dosen pembimbing;</p>
+                            <p class="text-justify">8. Mahasiswa dilarang untuk merekam selama proses bimbingan secara
+                                elektronik (HP) tanpa diketahui oleh dosen pembimbing, apabila hal ini
+                                terjadi dosen berhak untuk mengundurkan diri sebagai pembimbing,
+                                mahasiswa tersebut diberi hukuman mengulang dari awal (pengajuan
+                                proposal baru);</p>
+                            <p class="text-justify">9. Mahasiswa yang tidak pernah berkonsultasi lebih dari tiga bulan
+                                setelah
+                                penunjukan pembimbing skripsi akan diberi peringatan oleh Ketua
+                                jurusan/sekretaris jurusan;</p>
+                            <p class="text-justify">10. mahasiswa yang tidak pernah berkonsultasi lebih dari satu
+                                semester setelah
+                                penunjukan dosen pembimbing, maka skripsi dan segala kegiatan yang
+                                dilakukan untuk penulisan dinyatakan gagal. Mahasiswa yang bersangkutan
+                                wajib mengajukan proposal baru;</p>
+                            <h4>Penggantian dosen pembimbing skripsi:</h4>
+                            <p class="text-justify">a) Mahasiswa dapat mengajukan penggantian dosen pembimbing proposal
+                                dengan mengisi format permohonan kepada sekretaris jurusan/Ketua
+                                jurusan, apabila terjadi salah satu dari hal-hal berikut pada dosen
+                                pembimbing:</p>
+                            <p class="text-justify">1) Meninggal dunia;
+                                2) Sakit, sehingga yang bersangkutan harus istirahat panjang;
+                                3) Cuti di luar tanggungan negara;
+                                4) Pindah tugas;
+                                5) Alasan lain yang dapat dipertanggung jawabkan.</p>
+                            <p class="text-justify">b) Dosen pembimbing dapat mengajukan permohonan pengunduran diri
+                                secara tertulis sebagai dosen pembimbing apabila terjadi salah satu dari hal berikut:
+                            </p>
+                            <p class="text-justify">1) Sakit sehingga yang bersangkutan harus istirahat panjang;
+                                2) Cuti di luar tanggungan negara;
+                                3) Pindah tugas;
+                                4) Pelangaran etika ( mahasiswa memaksakan ke hendak,
+                                menginterpensi dosen pembimbing);
+                                5) Tidak sanggup membimbing mahasiswa dengan alasan yang
+                                rasional.</p>
+                            <p class="text-justify">c) Sekretaris jurusan mengusulkan surat penunjukan dosen pembimbing
+                                pengganti kepada fakultas dengan diketahui oleh ketua jurusan melalui
+                                Wakil Dekan 1;</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="position-sticky" style="top: 2rem;">
+                            <div class="p-3">
+                                <h3 class="fst-italic">Akreditasi Prodi</h3>
+                                <img src="assets/akreditasi.png" class="img-fluid" alt="...">
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1iWiITxgREl7Cjx_fSivRSyYW-SaWtTL-/view">Download
+                                            sertifikat</a>
+                                    </li>
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1UBR5HhjuKzA-W4jE_1Omdpd3gs-sOqtu/view">Download
+                                            SK Ban-PT</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="fst-italic">Asosiasi Prodi</h3>
+                                <img src="assets/pppba.png" class="img-fluid" alt="...">
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://drive.google.com/file/d/1MRsZr8tEKfTQ53iZG1DWJwESWVwZW5z3/view?usp=drive_link">Download
+                                            sertifikat</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="p-4">
+                                <h6 class="fst-none">Hubungi Kami</h6>
+                                <img src="assets/youtube.png" class="img-fluid" alt="..." />
+                                <ol class="list-unstyled">
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://www.youtube.com/@arabbeta2218">Youtube</a>
+                                    </li>
+                                    <img src="assets/intsgram.png" class="img-fluid" alt="..." />
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="https://www.instagram.com/hmpspba_uinfasbengkulu?igsh=NzY4dm9mYWc0bGR4">Instagram</a>
+                                    </li>
+                                    <img src="assets/gmail.png" class="img-fluid" alt="..." />
+                                    <li><a class="btn btn-sm btn-outline-secondary"
+                                            href="mailto:pba@mail.uinfasbengkulu.ac.id?subject=Assalamu'alaikum,">Email
+                                            PBA</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+</main>
+<footer class="py-5 text-light bg-danger" min-width: 768px>
+    <div>
+        <p class=" text-center">© Program Studi Pendidikan Bahasa Arab 2024</p>
+        <p class=" text-center"><a href="https://ftt.uinfasbengkulu.ac.id/"><img src="assets/websiteftt.PNG" alt="..."
+                    height="40" width="80"></a><a href="https://uinfasbengkulu.ac.id/"><img src="assets/websiteuin.PNG"
+                    alt="..." height="40" width="80"></a></a><a href="https://lpm.uinfasbengkulu.ac.id/"><img
+                    src="assets/websitelpm.PNG" alt="..." height="40" width="80"></a></p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
